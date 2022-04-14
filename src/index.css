@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+
+  --StrongCyan: hsl(171, 66%, 44%);
+  --StrongCyanShadow: hsl(171, 66%, 34%);
+  --LightBlue: hsl(233, 100%, 69%);
+  --LightBlueShadow: hsl(233, 100%, 59%);
+
+  /* Neutral */
+
+  --DarkGrayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+main {
+  max-width: 375px; /* desktop */
+  margin: 0 auto;
+}
+
+/* typo */
+h1,
+h2,
+h3 {
+  color: var(--DarkGrayish-Blue);
+  font-weight: 600;
+  margin: 0 2em 1em;
+}
+h1 {
+  font-size: 3.2rem;
+  margin: 0 1em 1em;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 2em 4em;
+  letter-spacing: 0.1px;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: 0 auto 4em;
+}
+
+/* perfect imgage */
+.resize {
+  width: auto;
+  margin-bottom: 2em;
+}
+
+.ex {
+  margin-bottom: 4em;
+}
+
+/* Buttons */
+.buttons a {
+  color: #fff;
+  display: block;
+  max-width: 90%;
+  margin: 25px auto;
+  padding: 1em 0;
+  text-decoration: none;
+  font-size: 1.8rem;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.5s;
+}
+
+.buttons a:nth-child(1) {
+  background-color: var(--StrongCyan);
+  box-shadow: 1px 3px var(--StrongCyanShadow);
+}
+
+.buttons a:nth-child(2) {
+  background-color: var(--LightBlue);
+  box-shadow: 1px 3px var(--LightBlueShadow);
+}
+
+.buttons a:hover {
+  opacity: 0.7;
+}
+
+.header {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: url(./Assets/images/bg-header-mobile.png) no-repeat;
+  background-size: 100%;
+}
+
+.footer {
+  background: rgb(240, 241, 243);
+  padding: 60px 0 20px;
+}
+
+.sm {
+  width: 20%;
+  margin-bottom: 4em;
+}
+
+.links{
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--DarkGrayish-Blue);
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-bottom: 1.5em;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.5s;
+}
+
+.footer a:hover {
+  color: var(--StrongCyan);
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  width: 275px;
+  margin: 50px auto 0;
+}
+
+.myIcon:hover{
+  fill: var(--StrongCyan);
+}
+
+/* White space layout */
+.snippets,
+.access,
+.suppercharge,
+.companies,
+.action {
+  margin-bottom: 8em;
+}
+
+/* For desktop version */
+@media only screen and (min-width: 1024px) {
+  main {
+    max-width: 1440px;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    margin: 0 0 0.5em;
+  }
+
+  p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+    font-size: 1.8rem;
+  }
+
+  img {
+    width: 65%;
+  }
+
+  /* layout */
+
+  .header {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: url(./Assets/images/bg-header-desktop.png) no-repeat;
+    background-size: 100%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    position: relative;
+  }
+
+  .computer {
+    width: 55%;
+    position: absolute;
+    top: 0;
+    left: -30px;
+  }
+
+  .items {
+    text-align: left;
+    max-width: 400px;
+    margin: 50px 9% 150px 0;
+  }
+
+  .items p {
+    margin-bottom: 2.5em;
+  }
+
+  /* Supercharge layout */
+  .suppercharge__container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .sp__items {
+    width: 410px;
+  }
+
+  /* Companies */
+  .companies {
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttons a {
+    width: 250px;
+    margin: -10px 20px 4em;
+  }
+
+  /* Section space */
+  .snippets,
+  .access,
+  .suppercharge,
+  .companies,
+  .action {
+    margin-bottom: 4em;
+  }
+
+  /* Footer */
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 3em 2em 7em;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: rgba(217, 222, 231, 0.308);
+  }
+
+  .sm{
+    width: 5%;
+    margin-bottom: 0;
+    /* margin-bottom: 1em; */
+  }
+
+  .links{
+    margin-left: 100px;
+    flex: 2;
+    margin-right: 200px;
+    text-align: left;
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 35px;
+  }
+
+  .links li:nth-of-type(1){order: 1;}
+  .links li:nth-of-type(2){order: 5;}
+  .links li:nth-of-type(3){order: 3;}
+  .links li:nth-of-type(4){order: 5;}
+  .links li:nth-of-type(5){order: 4;}
+
+  .social ul{
+    width: 180px;
+    margin: 0;
+    padding-top: 50px;
+  }
+}
