@@ -25,7 +25,7 @@ Solution of [Clipboard landing page challenge on Frontend Mentor](https://www.fr
 ## Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live](https://ethenpage.github.io/clipboard-landing-page/)
+- Live Site URL: [Live](https://ethenpage.github.io/re-clipboard-landing-page/)
 
 ## Built with
 
@@ -43,4 +43,3 @@ Solution of [Clipboard landing page challenge on Frontend Mentor](https://www.fr
 ## Date
 
 -14 April 2022
-
