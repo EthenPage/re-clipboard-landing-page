@@ -24,7 +24,7 @@ Solution of [Clipboard landing page challenge on Frontend Mentor](https://www.fr
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/clipboard-landing-page-by-using-react-HJOE6WBV9)
 - Live Site URL: [Live](https://ethenpage.github.io/re-clipboard-landing-page/)
 
 ## Built with
